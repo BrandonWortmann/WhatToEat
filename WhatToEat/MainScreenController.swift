@@ -8,8 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreenController: UIViewController {
 
+    @IBOutlet weak var whatToEatButton: UIButton!
+    @IBOutlet weak var recipesButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func whatToEatPressed(_ sender: Any)
+    {
+        
+    }
+    
+    @IBAction func recipesPressed(_ sender: Any)
+    {
+        
+    }
 }
 
