@@ -12,16 +12,13 @@
 		9E3888F420AF5B7B005CB7CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3888F220AF5B7B005CB7CB /* Main.storyboard */; };
 		9E3888F620AF5B7B005CB7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3888F520AF5B7B005CB7CB /* Assets.xcassets */; };
 		9E3888F920AF5B7B005CB7CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3888F720AF5B7B005CB7CB /* LaunchScreen.storyboard */; };
-		9EE3780920B48CFF0021F44C /* DrinksWTEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3780820B48CFF0021F44C /* DrinksWTEController.swift */; };
-		9EE3780B20B48D880021F44C /* BreakfastWTEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3780A20B48D880021F44C /* BreakfastWTEController.swift */; };
-		9EE3780D20B48DB60021F44C /* LunchWTEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3780C20B48DB60021F44C /* LunchWTEController.swift */; };
-		9EE3780F20B48E140021F44C /* DinnerWTEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3780E20B48E140021F44C /* DinnerWTEController.swift */; };
 		9EE3781120B48F260021F44C /* DrinkRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3781020B48F260021F44C /* DrinkRecipesController.swift */; };
 		9EE3781320B48F4B0021F44C /* BreakfastRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3781220B48F4B0021F44C /* BreakfastRecipesController.swift */; };
 		9EE3781520B48F630021F44C /* LunchRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3781420B48F630021F44C /* LunchRecipesController.swift */; };
 		9EE3781720B48F780021F44C /* DinnerRecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3781620B48F780021F44C /* DinnerRecipesController.swift */; };
 		9EE3781920B491420021F44C /* RecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3781820B491420021F44C /* RecipesController.swift */; };
 		9EE3781B20B4915D0021F44C /* WTEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3781A20B4915D0021F44C /* WTEController.swift */; };
+		9EE3781D20B4A9230021F44C /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE3781C20B4A9230021F44C /* Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +29,13 @@
 		9E3888F520AF5B7B005CB7CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E3888F820AF5B7B005CB7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E3888FA20AF5B7B005CB7CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EE3780820B48CFF0021F44C /* DrinksWTEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksWTEController.swift; sourceTree = "<group>"; };
-		9EE3780A20B48D880021F44C /* BreakfastWTEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastWTEController.swift; sourceTree = "<group>"; };
-		9EE3780C20B48DB60021F44C /* LunchWTEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchWTEController.swift; sourceTree = "<group>"; };
-		9EE3780E20B48E140021F44C /* DinnerWTEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerWTEController.swift; sourceTree = "<group>"; };
 		9EE3781020B48F260021F44C /* DrinkRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkRecipesController.swift; sourceTree = "<group>"; };
 		9EE3781220B48F4B0021F44C /* BreakfastRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastRecipesController.swift; sourceTree = "<group>"; };
 		9EE3781420B48F630021F44C /* LunchRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchRecipesController.swift; sourceTree = "<group>"; };
 		9EE3781620B48F780021F44C /* DinnerRecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinnerRecipesController.swift; sourceTree = "<group>"; };
 		9EE3781820B491420021F44C /* RecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesController.swift; sourceTree = "<group>"; };
 		9EE3781A20B4915D0021F44C /* WTEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTEController.swift; sourceTree = "<group>"; };
+		9EE3781C20B4A9230021F44C /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +68,9 @@
 		9E3888ED20AF5B7B005CB7CB /* WhatToEat */ = {
 			isa = PBXGroup;
 			children = (
-				9EE3780720B48CB20021F44C /* Recipes */,
-				9EE3780620B48C920021F44C /* WTE */,
+				9EE3782020B4AA190021F44C /* Controller */,
+				9EE3781F20B4AA130021F44C /* View */,
+				9EE3781E20B4A9F90021F44C /* Model */,
 				9E3888EE20AF5B7B005CB7CB /* AppDelegate.swift */,
 				9E3888F020AF5B7B005CB7CB /* MainScreenController.swift */,
 				9E3888F220AF5B7B005CB7CB /* Main.storyboard */,
@@ -84,18 +79,6 @@
 				9E3888FA20AF5B7B005CB7CB /* Info.plist */,
 			);
 			path = WhatToEat;
-			sourceTree = "<group>";
-		};
-		9EE3780620B48C920021F44C /* WTE */ = {
-			isa = PBXGroup;
-			children = (
-				9EE3780820B48CFF0021F44C /* DrinksWTEController.swift */,
-				9EE3780A20B48D880021F44C /* BreakfastWTEController.swift */,
-				9EE3780C20B48DB60021F44C /* LunchWTEController.swift */,
-				9EE3780E20B48E140021F44C /* DinnerWTEController.swift */,
-				9EE3781A20B4915D0021F44C /* WTEController.swift */,
-			);
-			path = WTE;
 			sourceTree = "<group>";
 		};
 		9EE3780720B48CB20021F44C /* Recipes */ = {
@@ -108,6 +91,30 @@
 				9EE3781820B491420021F44C /* RecipesController.swift */,
 			);
 			path = Recipes;
+			sourceTree = "<group>";
+		};
+		9EE3781E20B4A9F90021F44C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9EE3781F20B4AA130021F44C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3781A20B4915D0021F44C /* WTEController.swift */,
+				9EE3780720B48CB20021F44C /* Recipes */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9EE3782020B4AA190021F44C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EE3781C20B4A9230021F44C /* Controller.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,18 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EE3780920B48CFF0021F44C /* DrinksWTEController.swift in Sources */,
 				9EE3781920B491420021F44C /* RecipesController.swift in Sources */,
 				9EE3781520B48F630021F44C /* LunchRecipesController.swift in Sources */,
 				9E3888F120AF5B7B005CB7CB /* MainScreenController.swift in Sources */,
 				9EE3781320B48F4B0021F44C /* BreakfastRecipesController.swift in Sources */,
 				9EE3781120B48F260021F44C /* DrinkRecipesController.swift in Sources */,
-				9EE3780B20B48D880021F44C /* BreakfastWTEController.swift in Sources */,
 				9E3888EF20AF5B7B005CB7CB /* AppDelegate.swift in Sources */,
 				9EE3781720B48F780021F44C /* DinnerRecipesController.swift in Sources */,
-				9EE3780F20B48E140021F44C /* DinnerWTEController.swift in Sources */,
+				9EE3781D20B4A9230021F44C /* Controller.swift in Sources */,
 				9EE3781B20B4915D0021F44C /* WTEController.swift in Sources */,
-				9EE3780D20B48DB60021F44C /* LunchWTEController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
