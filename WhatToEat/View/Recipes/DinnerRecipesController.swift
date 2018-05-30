@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DinnerRecipesController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DinnerRecipesController: UIViewController/*, UITableViewDataSource, UITableViewDelegate*/ {
     
     
    
@@ -21,18 +21,18 @@ class DinnerRecipesController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        dinnerRecipesTable.delegate = self
-        dinnerRecipesTable.dataSource = self
+        //dinnerRecipesTable.delegate = self
+        //dinnerRecipesTable.dataSource = self
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
 
    
 

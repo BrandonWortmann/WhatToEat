@@ -8,15 +8,20 @@
 
 import UIKit
 
-class MainScreenController: UIViewController {
+class MainScreenController: UIViewController
+{
 
     @IBOutlet weak var whatToEatButton: UIButton!
     @IBOutlet weak var recipesButton: UIButton!
+    lazy var foodLists: FoodLists = FoodLists()
     
     
-    override func viewDidLoad() {
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,14 +29,21 @@ class MainScreenController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func whatToEatPressed(_ sender: Any)
+    override func viewDidAppear(_ animated: Bool)
     {
-        
+        foodLists.loadEverything()
     }
     
-    @IBAction func recipesPressed(_ sender: Any)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        
+        let addFood = segue.destination as! AddFoodController
+        addFood.foodLists = foodLists
     }
+    
+    @IBAction func newRecipePressed(_ sender: Any)
+    {
+        performSegue(withIdentifier: "addFoodSegue", sender: self)
+    }
+    
 }
 
