@@ -10,26 +10,38 @@ import UIKit
 
 class WTEController: UIViewController {
 
+    var foodLists = FoodLists()
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    @IBAction func dinnerPresssed(_ sender: Any)
+    {
+        displayLabel.text = foodLists.getDinnerItem()
+    }
+    
+    @IBAction func breakfastPressed(_ sender: Any)
+    {
+        displayLabel.text = foodLists.getBreakfastItem()
+    }
+    
+    
+    @IBAction func lunchPressed(_ sender: Any)
+    {
+        displayLabel.text = foodLists.getLunchItem()
+    }
+    
+  
+    @IBAction func drinksPressed(_ sender: Any)
+    {
+        displayLabel.text = foodLists.getDrinksItem()
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

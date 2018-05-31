@@ -47,6 +47,26 @@ public struct FoodLists
         UserDefaults.standard.set(drinks, forKey: "drinksList")
     }
     
+    func getDinnerItem() ->String
+    {
+        return dinner[Int(arc4random_uniform(UInt32(dinner.count)))].name
+    }
+    
+    func getBreakfastItem() ->String
+    {
+        return breakfast[Int(arc4random_uniform(UInt32(breakfast.count)))].name
+    }
+    
+    func getLunchItem() ->String
+    {
+        return dinner[Int(arc4random_uniform(UInt32(lunch.count)))].name
+    }
+    
+    func getDrinksItem() ->String
+    {
+        return dinner[Int(arc4random_uniform(UInt32(drinks.count)))].name
+    }
+    
     mutating func loadEverything()
     {
         if let x = UserDefaults.standard.object(forKey: "dinnerList") as? Array<Food>

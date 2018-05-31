@@ -19,7 +19,8 @@ class AddFoodController: UIViewController, UIPickerViewDataSource, UIPickerViewD
     @IBOutlet weak var tasteSlider: UISlider!
     @IBOutlet weak var timeSlider: UISlider!
     @IBOutlet weak var priceSlider: UISlider!
-    @IBOutlet weak var descriptionField: UITextField!
+    @IBOutlet weak var descriptionField: UITextView!
+    
     
     @IBOutlet weak var tasteLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -118,7 +119,6 @@ class AddFoodController: UIViewController, UIPickerViewDataSource, UIPickerViewD
         tasteSlider.isContinuous = false
         timeSlider.isContinuous = false
         priceSlider.isContinuous = false
-        
 
         // Do any additional setup after loading the view.
     }

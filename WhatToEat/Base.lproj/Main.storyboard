@@ -225,19 +225,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OcL-Js-aha">
-                                <rect key="frame" x="20" y="408" width="330" height="30"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Description" translatesAutoresizingMaskIntoConstraints="NO" id="n3k-4Y-V5c">
+                                <rect key="frame" x="52" y="413" width="330" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="r5L-Wr-Hy2"/>
                     </view>
                     <connections>
-                        <outlet property="descriptionField" destination="OcL-Js-aha" id="2tZ-mJ-oGW"/>
+                        <outlet property="descriptionField" destination="n3k-4Y-V5c" id="Tr6-Ce-4bn"/>
                         <outlet property="name" destination="8Uu-dN-JXS" id="0qd-oA-Svs"/>
                         <outlet property="priceLabel" destination="hZw-jx-1TA" id="nc2-gn-r9g"/>
                         <outlet property="priceSlider" destination="OQ9-th-yCL" id="bA2-id-aW5"/>
@@ -251,7 +250,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6iO-XW-RMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="936" y="-991"/>
+            <point key="canvasLocation" x="934.78260869565224" y="-991.304347826087"/>
         </scene>
         <!--Main Screen Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -270,7 +269,7 @@
                                 </state>
                                 <connections>
                                     <action selector="whatToEatPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E7L-a9-g3L"/>
-                                    <segue destination="z55-bR-x4o" kind="show" id="Ju6-ee-bpq"/>
+                                    <action selector="wtePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9j-Jg-4Kf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyI-TP-CRH" userLabel="recipesButton">
@@ -304,6 +303,7 @@
                         <outlet property="recipesButton" destination="MyI-TP-CRH" id="0zt-3z-Zm3"/>
                         <outlet property="whatToEatButton" destination="pQK-1x-CSb" id="0Qd-1U-III"/>
                         <segue destination="rbl-DN-BNO" kind="show" identifier="addFoodSegue" id="YUL-Uy-JI2"/>
+                        <segue destination="z55-bR-x4o" kind="show" identifier="pickFoodSegue" id="EoP-eu-jQj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -320,34 +320,69 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E4-ZS-QnR">
                                 <rect key="frame" x="16" y="115" width="160" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Dinner"/>
+                                <connections>
+                                    <action selector="dinnerPresssed:" destination="z55-bR-x4o" eventType="touchUpInside" id="Wun-uF-JGz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RY4-qc-Fz7">
                                 <rect key="frame" x="234" y="115" width="160" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Breakfast"/>
+                                <connections>
+                                    <action selector="breakfastPressed:" destination="z55-bR-x4o" eventType="touchUpInside" id="fjD-PQ-cyU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5t3-gD-u2P">
                                 <rect key="frame" x="16" y="507" width="160" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Lunch"/>
+                                <connections>
+                                    <action selector="lunchPressed:" destination="z55-bR-x4o" eventType="touchUpInside" id="Vjd-zc-pk7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QB2-dK-7U2">
                                 <rect key="frame" x="234" y="507" width="160" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Drinks"/>
+                                <connections>
+                                    <action selector="drinksPressed:" destination="z55-bR-x4o" eventType="touchUpInside" id="3eU-pD-AQJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-JR-iO1">
+                                <rect key="frame" x="20" y="302" width="374" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qg8-lk-gMb">
+                                <rect key="frame" x="20" y="669" width="79" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="DEe-u4-pbD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="LSD-TN-JJ4"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="aFz-JR-iO1" id="Hq8-cP-Zze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9j-28-hrH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="32"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="31.793478260869566"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eHi-dQ-P8Z"/>
+        <segue reference="DEe-u4-pbD"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -38,6 +38,9 @@ class MainScreenController: UIViewController
     {
         let addFood = segue.destination as! AddFoodController
         addFood.foodLists = foodLists
+        
+        let pickFood = segue.destination as! WTEController
+        pickFood.foodLists = foodLists
     }
     
     @IBAction func newRecipePressed(_ sender: Any)
@@ -45,5 +48,9 @@ class MainScreenController: UIViewController
         performSegue(withIdentifier: "addFoodSegue", sender: self)
     }
     
+    @IBAction func wtePressed(_ sender: Any)
+    {
+        performSegue(withIdentifier: "pickFoodSegue", sender: self)
+    }
 }
 
