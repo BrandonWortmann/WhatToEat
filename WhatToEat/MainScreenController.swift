@@ -38,7 +38,7 @@ class MainScreenController: UIViewController
     {
         let addFood = segue.destination as! AddFoodController
         addFood.foodLists = foodLists
-        
+
         let pickFood = segue.destination as! WTEController
         pickFood.foodLists = foodLists
     }
