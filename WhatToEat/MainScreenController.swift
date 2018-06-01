@@ -36,11 +36,19 @@ class MainScreenController: UIViewController
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        let addFood = segue.destination as! AddFoodController
-        addFood.foodLists = foodLists
+        if segue.identifier! == "addFoodSegue"
+        {
+            let addFood = segue.destination as! AddFoodController
+            addFood.foodLists = foodLists
+        }
+        
+        if segue.identifier! == "pickFoodSegue"
+        {
+            let pickFood = segue.destination as! WTEController
+            pickFood.foodLists = foodLists
+        }
 
-        let pickFood = segue.destination as! WTEController
-        pickFood.foodLists = foodLists
+       
     }
     
     @IBAction func newRecipePressed(_ sender: Any)

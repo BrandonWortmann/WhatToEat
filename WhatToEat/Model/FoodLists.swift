@@ -27,6 +27,7 @@ public struct FoodLists
     {
         dinner.append(item)
         UserDefaults.standard.set(dinner, forKey: "dinnerList")
+        
     }
     
     mutating func addLunch(item :Food)
@@ -49,21 +50,40 @@ public struct FoodLists
     
     func getDinnerItem() ->String
     {
+        if dinner.count == 0
+        {
+            return "You havn't added anything"
+        }
         return dinner[Int(arc4random_uniform(UInt32(dinner.count)))].name
     }
     
     func getBreakfastItem() ->String
     {
+        if breakfast.count == 0
+        {
+            return "You havn't added anything"
+        }
+        
         return breakfast[Int(arc4random_uniform(UInt32(breakfast.count)))].name
     }
     
     func getLunchItem() ->String
     {
+        if lunch.count == 0
+        {
+            return "You havn't added anything"
+        }
+        
         return dinner[Int(arc4random_uniform(UInt32(lunch.count)))].name
     }
     
     func getDrinksItem() ->String
     {
+        if drinks.count == 0
+        {
+            return "You havn't added anything"
+        }
+        
         return dinner[Int(arc4random_uniform(UInt32(drinks.count)))].name
     }
     

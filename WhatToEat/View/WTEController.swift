@@ -16,6 +16,7 @@ class WTEController: UIViewController {
     @IBAction func dinnerPresssed(_ sender: Any)
     {
         displayLabel.text = foodLists.getDinnerItem()
+        print(foodLists.dinner[0].name)
     }
     
     @IBAction func breakfastPressed(_ sender: Any)

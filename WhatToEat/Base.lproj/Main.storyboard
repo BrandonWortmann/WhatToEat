@@ -220,6 +220,7 @@
                                 <rect key="frame" x="52" y="413" width="330" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd9-HG-tMe">
@@ -268,7 +269,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="wtePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X9j-Jg-4Kf"/>
+                                    <action selector="wtePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZG-ba-CLf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyI-TP-CRH" userLabel="recipesButton">
@@ -291,7 +292,7 @@
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="newRecipePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHQ-W4-ZI2"/>
+                                    <action selector="newRecipePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZE-Hm-ihY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -300,7 +301,7 @@
                     </view>
                     <connections>
                         <outlet property="recipesButton" destination="MyI-TP-CRH" id="0zt-3z-Zm3"/>
-                        <outlet property="whatToEatButton" destination="pQK-1x-CSb" id="0Qd-1U-III"/>
+                        <outlet property="whatToEatButton" destination="pQK-1x-CSb" id="XwI-1b-FCc"/>
                         <segue destination="rbl-DN-BNO" kind="show" identifier="addFoodSegue" id="YUL-Uy-JI2"/>
                         <segue destination="z55-bR-x4o" kind="show" identifier="pickFoodSegue" id="EoP-eu-jQj"/>
                     </connections>

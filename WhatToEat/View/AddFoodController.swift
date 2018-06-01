@@ -87,10 +87,11 @@ class AddFoodController: UIViewController, UIPickerViewDataSource, UIPickerViewD
             foodLists.addLunch(item: Food(name: name.text!, rating: Int (tasteSlider.value), time: Int (timeSlider.value), cost: Int (priceSlider.value), description: descriptionField.text!))
         }
         
-        if (item == "Drink")
+        if (item == "Drinks")
         {
             foodLists.addDrink(item: Food(name: name.text!, rating: Int (tasteSlider.value), time: Int (timeSlider.value), cost: Int (priceSlider.value), description: descriptionField.text!))
         }
+        
         
         name.text = nil
         tasteSlider.value = 1
